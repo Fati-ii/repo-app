@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: repo-app
+spec:
+  type: git
+  params:
+    - name: url
+      value: https://github.com/Fati-ii/repo-app.git
+    - name: revision
+      value: main
